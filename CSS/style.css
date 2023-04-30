@@ -1,0 +1,183 @@
+
+
+body{
+background: -moz-radial-gradient(23% 4%, circle cover, #B38E76 0, #1C0C0A 89%);/* FF3.6+ */
+background: -webkit-radial-gradient(23% 4%, circle cover, #B38E76 0, #1C0C0A 89%);/* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(23% 4%, circle cover, #B38E76 0, #1C0C0A 89%);/* Opera 11.10+ */
+background: -ms-radial-gradient(23% 4%, circle cover, #B38E76 0, #1C0C0A 89%);/* IE10+ */
+background: radial-gradient(23% 4%, circle cover, #B38E76 0, #1C0C0A 89%);/* W3C */
+	padding: 0;
+	margin: auto;
+	font-family: "Arial";
+}
+h1{
+	margin-bottom: 0;
+		font-family: "Arial";
+
+}
+h3{
+	color: blue;
+	margin-top: 0;
+	display: flex;
+	flex-direction: row;
+}
+.yellow{
+	color: yellow
+}
+.chess  {
+	width: 50vw;
+	height: 100%;
+	position: fixed;
+	perspective-origin: left bottom;
+	transform-style: preserve-3d;
+  	perspective: 820px;
+}
+.chess_board{
+/*	border: 3px solid black;*/
+	border-bottom: 25px solid black;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	transform-style: preserve-3d;
+	transform: rotateX(45deg);
+	width: 100%;
+	height: 100% ;
+	
+}
+/*.chess_board::after{
+	display: block;
+	height: 15px;
+	width: 100%;
+	background-color: aqua;
+}
+*/
+
+
+.cel, .pawnW, .knightW, .bishopW, .kingW, .quinW, .rookW, 
+	  .pawnB, .knightB, .bishopB, .kingB, .quinB, .rookB
+{
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+.line8, .line7, .line6, .line5, 
+.line4, .line3, .line2, .line1, .cel{
+	/* perspective-origin: left center;*/
+	transform-style: preserve-3d;
+	
+}
+.pawnW, .knightW, .bishopW, .kingW, .quinW, .rookW, 
+.pawnB, .knightB, .bishopB, .kingB, .quinB, .rookB
+{
+	transform:  rotateX(-45deg) translateY(-40%);	
+	opacity: 0.7;
+	
+	
+}
+.pawnW, .pawnB
+{
+	transform:  rotateX(-45deg) translateY(-35%);	
+	
+	
+}
+.line1,
+.line2,
+.line3,
+.line4,
+.line5,
+.line6,
+.line7,
+.line8{
+	height: 12.5%;
+	display: flex;
+	flex-direction: row;
+}
+.black{
+	background: -moz-radial-gradient(61% 77%, circle cover, #B38E76 0, #1C0C0A 74%);/* FF3.6+ */
+background: -webkit-radial-gradient(61% 77%, circle cover, #B38E76 0, #1C0C0A 74%);/* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(61% 77%, circle cover, #B38E76 0, #1C0C0A 74%);/* Opera 11.10+ */
+background: -ms-radial-gradient(61% 77%, circle cover, #B38E76 0, #1C0C0A 74%);/* IE10+ */
+background: radial-gradient(61% 77%, circle cover, #B38E76 0, #1C0C0A 74%);/* W3C */
+}
+.white{
+	background-color: white;
+}
+
+.pawnW{
+	background-image: url("../img/pawnW.png");
+	background-size: 55%;
+
+}
+.pawnB{
+	background-image: url("../img/pawnB.png");
+	background-size: 55%;
+}
+.knightW{
+	background-image: url("../img/knightW.png");
+	background-size: 64%;
+}
+.knightB{
+	background-image: url("../img/knightB.png");
+	background-size: 64%;
+}
+
+.bishopW{
+	background-image: url("../img/bishopW.png");
+	background-size: 64%;
+}
+.bishopB{
+	background-image: url("../img/bishopB.png");
+	background-size: 64%;
+}
+
+.kingW{
+	background-image: url("../img/kingW.png");
+	background-size: 60%;
+}
+.kingB{
+	background-image: url("../img/kingB.png");
+	background-size: 60%;
+}
+
+.quinW{
+	background-image: url("../img/quinW.png");
+	background-size: 64%;
+}
+.quinB{
+	background-image: url("../img/quinB.png");
+	background-size: 64%;
+}
+
+.rookW{
+	background-image: url("../img/rookW.png");
+	background-size: 64%;
+}
+.rookB{
+	background-image: url("../img/rookB.png");
+	background-size: 64%;
+}
+.games{
+		width: 90%;
+	margin: auto;
+	position: relative;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	border: 5px white solid;
+	padding: 15px;
+
+}
+p{
+	margin-top: 0;
+	color: white;
+	text-decoration: none;
+}
+.block{
+	padding: 5px;
+}
+.block:hover{
+	border: 2px solid white;
+}
